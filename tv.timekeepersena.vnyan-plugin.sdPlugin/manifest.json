@@ -1,0 +1,83 @@
+{
+	"Name": "VNyan StreamDeck Plugin",
+	"Version": "0.1.0.0",
+	"Author": "Timekeeper Sena",
+	"Actions": [
+		{
+			"Name": "Simple Message",
+			"UUID": "tv.timekeepersena.vnyan-plugin.message",
+			"Icon": "imgs/actions/vnyan/icon_momentary",
+			"Tooltip": "Fires a WebSocket message when pressed.",
+			"PropertyInspectorPath": "ui/message-simple.html",
+			"Controllers": [
+				"Keypad"
+			],
+			"States": [
+				{
+					"Image": "imgs/actions/vnyan/key",
+					"TitleAlignment": "bottom"
+				}
+			]
+		},
+        {
+			"Name": "Momentary Message",
+			"UUID": "tv.timekeepersena.vnyan-plugin.message-momentary",
+			"Icon": "imgs/actions/vnyan/icon_momentary",
+			"Tooltip": "Fires a WebSocket message when pressed, and another when released.",
+			"PropertyInspectorPath": "ui/message-momentary.html",
+			"Controllers": [
+				"Keypad"
+			],
+			"States": [
+				{
+					"Image": "imgs/actions/vnyan/key",
+					"TitleAlignment": "bottom"
+				}
+			]
+		},
+        {
+			"Name": "Latched Message",
+			"UUID": "tv.timekeepersena.vnyan-plugin.message-latched",
+			"Icon": "imgs/actions/vnyan/icon_latched",
+			"Tooltip": "Fires a WebSocket message when pressed, and another when pressed again, toggling between the two.",
+			"PropertyInspectorPath": "ui/message-latched.html",
+			"Controllers": [
+				"Keypad"
+			],
+			"States": [
+				{
+					"Image": "imgs/actions/vnyan/key_on",
+					"TitleAlignment": "bottom"
+				},
+                {
+                    "Image": "imgs/actions/vnyan/key_off",
+                    "TitleAlignment": "bottom"
+                }
+			]
+		}
+	],
+	"Category": "VNyan",
+	"CategoryIcon": "imgs/plugin/vnyan 1",
+	"CodePath": "bin/plugin.js",
+	"Description": "A plugin to facilitate controlling the 3D VTuber software VNyan with your Stream Deck",
+	"Icon": "imgs/plugin/marketplace",
+	"SDKVersion": 2,
+	"Software": {
+		"MinimumVersion": "6.4"
+	},
+	"OS": [
+		{
+			"Platform": "mac",
+			"MinimumVersion": "12"
+		},
+		{
+			"Platform": "windows",
+			"MinimumVersion": "10"
+		}
+	],
+	"Nodejs": {
+		"Version": "20",
+		"Debug": "enabled"
+	},
+	"UUID": "tv.timekeepersena.vnyan-plugin"
+}
