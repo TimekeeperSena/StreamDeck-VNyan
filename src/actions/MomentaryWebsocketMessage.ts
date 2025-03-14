@@ -12,7 +12,6 @@ export class MomentaryWebsocketMessage extends SingletonAction<MomentaryWebsocke
 
         if (!this.isDown)
         {
-            console.log('test')
             var ws = new WebSocket('ws://localhost:8000/vnyan');
             ws.on('open', () => ws.send(settings.keyDownMessage));
         }

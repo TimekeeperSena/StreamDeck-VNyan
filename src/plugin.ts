@@ -4,10 +4,10 @@ import { SimpleWebsocketMessage } from "./actions/SimpleWebsocketMessage";
 import { MomentaryWebsocketMessage } from "./actions/MomentaryWebsocketMessage";
 import { LatchedWebsocketMessage } from "./actions/LatchedWebsocketMessage";
 
-// We can enable "trace" logging so that all messages between the Stream Deck, and the plugin are recorded. When storing sensitive information
+// Turn on trace log level. We're not really gonna be printing much though
 streamDeck.logger.setLevel(LogLevel.TRACE);
 
-// Register the increment action.
+// Register our actions.
 streamDeck.actions.registerAction(new SimpleWebsocketMessage());
 streamDeck.actions.registerAction(new MomentaryWebsocketMessage());
 streamDeck.actions.registerAction(new LatchedWebsocketMessage());
