@@ -19,7 +19,7 @@
 				}
 			]
 		},
-        {
+		{
 			"Name": "Momentary Message",
 			"UUID": "tv.timekeepersena.vnyan-plugin.message-momentary",
 			"Icon": "imgs/actions/vnyan/icon_momentary",
@@ -35,7 +35,7 @@
 				}
 			]
 		},
-        {
+		{
 			"Name": "Latched Message",
 			"UUID": "tv.timekeepersena.vnyan-plugin.message-latched",
 			"Icon": "imgs/actions/vnyan/icon_latched",
@@ -49,10 +49,10 @@
 					"Image": "imgs/actions/vnyan/key_on",
 					"TitleAlignment": "bottom"
 				},
-                {
-                    "Image": "imgs/actions/vnyan/key_off",
-                    "TitleAlignment": "bottom"
-                }
+				{
+					"Image": "imgs/actions/vnyan/key_off",
+					"TitleAlignment": "bottom"
+				}
 			]
 		}
 	],
